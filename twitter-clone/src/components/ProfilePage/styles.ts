@@ -18,14 +18,15 @@ export const Banner = styled.div`
   flex-shrink: 0;
 
   width: 100%;
-  height: min-content(32vw, 199px);
+  height: min(33vw, 199px);
 
   background: var(--twitter);
+
   position: relative;
 `;
 export const Avatar = styled.div`
   width: max(45px, min(135px, 22vw));
-  height: max(45px, min(135, 22vw));
+  height: max(45px, min(135px, 22vw));
 
   border:3.75px solid var(--primary);
   background: var(--gray);
@@ -96,6 +97,7 @@ export const Followage = styled.div`
   >span {
     font-size: 15px;
     color: var(--gray);
+    margin-right: 20px;
   }
   & + span {
     margin-left: 20px;
