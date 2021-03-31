@@ -99,9 +99,9 @@ export const Followage = styled.div`
   >span {
     font-size: 15px;
     color: var(--gray);
-    margin-right: 20px;
+    /* margin-right: 20px; */
   }
-  & + span {
+  & span {
     margin-left: 20px;
   }
 `;
