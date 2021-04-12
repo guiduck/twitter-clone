@@ -16,7 +16,7 @@ import {
   RetweetIcon, 
   LikeIcon 
 } from './styles';
-
+//tem que fazer coisa aqui
 const Tweet: React.FC = () => {
   return (
     <Container>
