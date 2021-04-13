@@ -7,7 +7,8 @@ import {
   RocketseatIcon, 
   Body, 
   Content, 
-  Header, 
+  Header,
+  Dot, 
   Description, 
   ImageContent, 
   Icons, 
@@ -32,7 +33,7 @@ const Tweet: React.FC = () => {
           <Header>
             <strong>Rocketseat</strong>
             <span>@rocketseat</span>
-            {/* <Dot /> */}
+            <Dot />
             <time>27 de jun</time>
           </Header>
           
