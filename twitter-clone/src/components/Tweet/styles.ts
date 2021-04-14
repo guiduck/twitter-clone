@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {Rocketseat } from '../../styles/Icons';
 
  export const Container = styled.div`
   display: flex;
@@ -20,7 +21,19 @@ import styled from 'styled-components';
  `; 
  
  export const Avatar = styled.div``; 
- export const  RocketseatIcon = styled.div``; 
+
+ export const  RocketseatIcon = styled(Rocketseat)`
+  width: 16px;
+  height: 16px;
+
+  margin-left: 35px;
+  margin-right: 9px;
+
+  > path{
+    fill: var(--gray);
+  }
+ `; 
+
  export const Body = styled.div``; 
  export const Content = styled.div``; 
  export const Header = styled.div``; 
