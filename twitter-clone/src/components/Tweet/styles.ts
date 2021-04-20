@@ -89,7 +89,11 @@ import {Rocketseat } from '../../styles/Icons';
   height: 2px;
   margin: 0 10px;
  `;
- export const Description = styled.div``; 
+
+ export const Description = styled.div`
+  font-size: 14px;
+  margin-top: 4px;
+ `; 
  export const ImageContent = styled.div``; 
  export const Icons = styled.div``; 
  export const Status = styled.div``; 
