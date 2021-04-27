@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import {Rocketseat } from '../../styles/Icons';
+import styled, { css } from 'styled-components';
+import {Chat, Rocketseat, Favorite } from '../../styles/Icons';
 
  export const Container = styled.div`
   display: flex;
@@ -90,13 +90,89 @@ import {Rocketseat } from '../../styles/Icons';
   margin: 0 10px;
  `;
 
- export const Description = styled.div`
+ export const Description = styled.p`
   font-size: 14px;
   margin-top: 4px;
  `; 
- export const ImageContent = styled.div``; 
- export const Icons = styled.div``; 
- export const Status = styled.div``; 
- export const CommentIcon = styled.div``; 
- export const RetweetIcon = styled.div``; 
- export const LikeIcon = styled.div``;
+
+ export const ImageContent = styled.div`
+  margin-top: 12px;
+  width: 100%;
+  height: min(285px, max(175px, 41vw));
+
+  background: var(--outline);
+  border-radius: 14px;
+
+  cursor: pointer;
+  &:hover {
+    opacity: .7;
+  }
+`; 
+
+ export const Icons = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 11px auto 0;
+  width: 100%;
+
+  @media (min-width: 330px) {
+    width: 63%;
+  }
+
+  >div {
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+ `; 
+
+ export const Status = styled.div`
+  display:flex;
+  align-items: center;
+
+  font-size: 14px;
+
+  >svg {
+    margin-right: 5px;
+  }
+
+  &:nth-child(1) {
+    &, >svg path {
+      color: var(--gray);
+    }
+  }
+
+  &:nth-child(2) {
+    color: var(--retweet);
+
+    &, > svg path {
+      fill: var(--retweet);
+    }
+  }
+
+  &:nth-child(3) {
+    color: var(--like);
+    &, >svg path {
+      fill: var(--like);
+    }
+  }
+ `; 
+
+const iconCSS = css`
+  width: 17px;
+  height: 19px;
+`;
+
+ export const CommentIcon = styled(Chat)`
+  ${iconCSS}
+ `; 
+ export const RetweetIcon = styled(Rocketseat)`
+  ${iconCSS}
+ `; 
+ export const LikeIcon = styled(Favorite)`
+  ${iconCSS}
+ `;
