@@ -149,14 +149,14 @@ import {Chat, Rocketseat, Favorite } from '../../styles/Icons';
   &:nth-child(2) {
     color: var(--retweet);
 
-    &, > svg path {
+    >svg path {
       fill: var(--retweet);
     }
   }
 
   &:nth-child(3) {
     color: var(--like);
-    &, >svg path {
+    >svg {
       fill: var(--like);
     }
   }
