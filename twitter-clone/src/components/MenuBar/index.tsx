@@ -1,6 +1,18 @@
 import React from 'react';
 
-import { Container } from './styles';
+import Button from '../Button';
+
+import { 
+  Container,
+  Topside,
+  Logo,
+  MenuButton,
+  HomeIcon,
+  BellIcon,
+  EmailIcon, 
+  FavoriteIcon, 
+  ProfileIcon 
+} from './styles';
 
 const MenuBar: React.FC = () => {
   return (
@@ -27,7 +39,7 @@ const MenuBar: React.FC = () => {
           <span>Favoritados</span>
           
         </MenuButton>
-        <MenuButton ClassName="active">
+        <MenuButton className="active">
           <ProfileIcon />
           <span>Perfil</span>
           
