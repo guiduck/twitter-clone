@@ -24,9 +24,19 @@ const iconCSS = css`
   color: var(--white);
 `;
 
-export const HomeIcon = styled(Home)`${iconCSS}`;
-export const BellIcon = styled(Notifications)`${iconCSS}`;
-export const EmailIcon  = styled(Email)`${iconCSS}`;
-export const FavoriteIcon  = styled(FavoriteBorder)`${iconCSS}`;
-export const ProfileIcon  = styled(Person)`${iconCSS}`;
+export const HomeIcon = styled(Home)`
+  ${iconCSS}
+`;
+export const BellIcon = styled(Notifications)`
+  ${iconCSS}
+`;
+export const EmailIcon  = styled(Email)`
+  ${iconCSS}
+`;
+export const FavoriteIcon  = styled(FavoriteBorder)`
+  ${iconCSS}
+`;
+export const ProfileIcon  = styled(Person)`
+  ${iconCSS}
+`;
 
