@@ -30,8 +30,27 @@ export const Container = styled.div`
   }
 `;
   
-export const Topside = styled.div``;
-export const Logo = styled.div``;
+export const Topside = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 1280px) {
+    align-items: center;
+  }
+`;
+
+export const Logo = styled(Rocketseat)`
+  width: 41px;
+  height: 41px;
+
+  >path {
+    fill: var(--twitter);
+  }
+
+  margin-bottom: 20px;
+`;
+
 export const MenuButton = styled.div``;
 
 const iconCSS = css`
