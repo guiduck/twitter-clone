@@ -67,7 +67,10 @@ export const MenuButton = styled.button`
 
       font-weight: bold;
       font-size: 19px;
+
     }
+
+    padding-right: 15px;
   }
 
   padding: 8.25px 0;
@@ -95,6 +98,13 @@ export const MenuButton = styled.button`
         display: inline;
       }
     }
+  }
+
+  cursor: pointer;
+  border-radius: 25px;
+
+  &:hover {
+    background: var(--twitter-dark-hover);
   }
 `;
 
