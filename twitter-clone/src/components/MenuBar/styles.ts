@@ -175,7 +175,7 @@ export const ExitIcon = styled(ExitToApp)`
 
     &:hover {
       >path{
-        color: var(--white);
+        color: var(--white); 
       }
     }
   }
