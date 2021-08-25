@@ -70,7 +70,7 @@ export const MenuButton = styled.button`
 
     }
 
-    padding-right: 15px;
+    padding-right: 20px;
   }
 
   padding: 8.25px 0;
@@ -86,7 +86,7 @@ export const MenuButton = styled.button`
     width: 40px;
     height: 40px;
 
-    >span {
+    > span {
       display: none;
     } 
 
@@ -94,7 +94,7 @@ export const MenuButton = styled.button`
       width: 100%;
       height: unset;
 
-      >span {
+      > span {
         display: inline;
       }
     }

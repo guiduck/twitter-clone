@@ -1,5 +1,11 @@
 import React from 'react';
 
+import StickyBox from 'react-sticky-box';
+
+import List from '../List';
+import FollowSuggestion from '../FollowSuggestion';
+import News from '../News'
+
 import { 
   Container,
   SearchWrapper,
@@ -15,10 +21,29 @@ const SideBar: React.FC = () => {
         <SearchInput placeholder='Buscar no Twitter'/>
           <SearchIcon />
       </SearchWrapper>
-
-      <Body>
-        <p>{ 'Lorem ipsum solor sit oanosdja faf'.repeat(90)}</p>
-      </Body>
+      <StickyBox>
+        <Body>
+          <List 
+            title="Talvez você curta" 
+            elements={[
+              <FollowSuggestion name='Luiz Batanero' nickname='@luizbatanero'/>,
+              <FollowSuggestion name='Luke Morales' nickname='@lukemorales'/>,
+              <FollowSuggestion name='Camila Magalhães' nickname='@camilaamgl'/>
+            ]}  
+          />
+          <List 
+            title="Talvez você curta" 
+            elements={[
+              <News />, 
+              <News />,
+              <News />,
+              <News />,
+              <News />,
+              <News />
+            ]}  
+          />
+        </Body>
+      </StickyBox>
     </Container>
 
   );
